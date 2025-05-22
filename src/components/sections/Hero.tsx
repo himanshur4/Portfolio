@@ -51,6 +51,7 @@ const Hero = () => {
         initial="hidden"
         animate="visible"
       >
+        <img className="rounded-full size-60" src="himanshu.jpg" alt="HimanshuPic"/>
         <motion.div className="text-center sm:text-left">
           <motion.h1
             className="hero-title text-5xl sm:text-6xl md:text-7xl lg:text-7xl mb-4 font-bold text-primary-900"
@@ -154,8 +155,7 @@ const Hero = () => {
               </motion.div>
             ))}
           </motion.div>
-        </motion.div>
-        <motion.div
+          <motion.div
           className="flex flex-col justify-center items-center relative"
           animate={{ y: [0, -10, 0] }}
         >
@@ -203,8 +203,10 @@ const Hero = () => {
             />
           </motion.div>
         </motion.div>
+        </motion.div>
+        
       </motion.div>
-
+            
       {/* Scroll Indicator */}
       <motion.div
         className="hidden absolute bottom-3 lg:flex justify-center w-full z-10"
